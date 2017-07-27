@@ -47,8 +47,6 @@ class Feed extends Component {
 
           {this.props.children}
           {renderFeed}
-            {/* Pass in the loader via props.*/}
-            {/* Pass in the renderFeed object. */}
           </div>
         </div>
       </div>
@@ -107,7 +105,7 @@ class App extends Component {
 
   componentWillMount() {
   // *******Set your API URL with the API key.
-  let url = "https://newsapi.org/v1/articles?source=reddit-r-all&sortBy=latest&apiKey=9f23ca15a0b648f9a5dd1b6fa3cfce4b"
+  let url = "https://newsapi.org/v1/articles?source=new-scientist&sortBy=top&apiKey=9f23ca15a0b648f9a5dd1b6fa3cfce4b"
   // ********We use regex to extra website name.
   let extract = url.match(/source=\=*(.*?)\s*&s/).pop();
   // *******We set site name to state.
